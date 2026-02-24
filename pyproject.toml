@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore::urllib3.exceptions.InsecureRequestWarning",
+    "ignore::requests.exceptions.RequestsDependencyWarning",
+    "ignore::requests.packages.urllib3.exceptions.InsecureRequestWarning",
+    "ignore:Number of words.*:UserWarning",
+    "ignore:urllib3.*doesn't match a supported version:UserWarning",
+    "ignore:.*doesn't match a supported version.*:Warning",
+]

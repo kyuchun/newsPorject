@@ -332,4 +332,3 @@ def summarize(body: SummarizeRequest):
     if not body.text.strip():
         raise HTTPException(400, "텍스트가 비어 있습니다.")
     return {"summary": _summarize_text(body.text, body.sentence_count, body.language)}
-
